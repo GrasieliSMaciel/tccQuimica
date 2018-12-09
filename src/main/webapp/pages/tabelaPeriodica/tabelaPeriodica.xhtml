@@ -1,0 +1,894 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:adm="http://github.com/adminfaces"
+	template="/WEB-INF/templates/template.xhtml">
+
+	<ui:define name="head-end">
+		<style type="text/css">
+.ui-grid-row .ui-grid-col-2, .ui-grid-row .ui-grid-col-10 {
+	padding: 0.5em 0;
+	margin-left: 10px;
+}
+
+.ui-orderlist .ui-orderlist-list {
+	height: auto;
+}
+
+.ui-orderlist .ui-grid-row .ui-grid-col-2, .ui-orderlist .ui-grid-row .ui-grid-col-10
+	{
+	padding: 0;
+}
+
+.ui-g div {
+	background-color: #ededed;
+	text-align: center;
+	border: 1px solid #fafafa;
+	width: 60px;
+	height: 60px;
+}
+
+.ui-g button {
+	text-align: center;
+	width: 60px;
+	height: 60px;
+	align: center;
+	background-color: clearblue
+}
+</style>
+
+
+	</ui:define>
+
+	<ui:define name="title">
+        Pesquisa Default
+    </ui:define>
+
+	<ui:define name="description">
+        Pesquise ... 
+    </ui:define>
+
+
+
+
+	<ui:define name="body">
+		<adm:breadcrumb title="Pesquisa Default" />
+
+		<h:form>
+
+
+
+			<h3 style="margin-top: 0">Basic</h3>
+			<br />
+
+
+			<div class="ui-g">
+				<div>
+					<p:commandButton value="H" action="#{listaElementoMB.testa('H')}" styleClass=".ui-g">
+						<f:param name="productId" value="10" />
+					</p:commandButton>
+				</div>
+
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+
+				<div class="ui-g">
+					<p:commandButton value="He" action="#{listaElementoMB.testa('He')}" styleClass=".ui-g">
+						<f:param name="productId" value="10" />
+					</p:commandButton>
+				</div>
+
+			</div>
+
+
+			<div class="ui-g">
+				<div>
+					<p:commandButton value="Li" action="#{listaElementoMB.testa('Li')}" styleClass=".ui-g">
+						<f:param name="productId" value="10" />
+					</p:commandButton>				</div>
+				<div>
+					<p:commandButton value="Be" action="#{listaElementoMB.testa('Be')}" styleClass=".ui-g">
+						<f:param name="productId" value="10" />
+					</p:commandButton>
+				</div>
+
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div>
+					<p:commandButton value="B" action="#{listaElementoMB.testa('B')}" styleClass=".ui-g">
+						<f:param name="productId" value="10" />
+					</p:commandButton>
+				</div>
+
+				<div>
+					<p:commandButton value="C" action="#{listaElementoMB.testa('C')}" styleClass=".ui-g">
+						<f:param name="productId" value="10" />
+					</p:commandButton>
+				</div>
+
+				<div>
+					<p:commandButton value="N" action="#{listaElementoMB.testa('N')}" styleClass=".ui-g">
+						<f:param name="productId" value="10" />
+					</p:commandButton>
+				</div>
+
+				<div>
+					<p:commandButton value="O" action="#{listaElementoMB.testa('O')}" styleClass=".ui-g">
+						<f:param name="productId" value="10" />
+					</p:commandButton>
+				</div>
+
+				<div>
+					<p:commandButton value="F" action="#{listaElementoMB.testa('F')}" styleClass=".ui-g">
+						<f:param name="productId" value="10" />
+					</p:commandButton>
+				</div>
+
+				<div>
+					<p:commandButton value="Ne" action="#{listaElementoMB.testa('Ne')}" styleClass=".ui-g">
+						<f:param name="productId" value="10" />
+					</p:commandButton>
+				</div>
+			</div>
+
+
+
+			<div class="ui-g">
+				<div>
+					<p:commandButton value="Na" action="#{listaElementoMB.testa('Na')}" styleClass=".ui-g">
+						<f:param name="productId" value="10" />
+					</p:commandButton>
+				</div>
+				<div>
+					<p:commandButton value="Mg" action="#{listaElementoMB.testa('Mg')}" styleClass=".ui-g">
+						<f:param name="productId" value="10" />
+					</p:commandButton>
+				</div>
+
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+
+				<div>
+					<p:commandButton value="Al" action="#{listaElementoMB.testa('Al')}" styleClass=".ui-g">
+						<f:param name="productId" value="10" />
+					</p:commandButton>
+				</div>
+
+				<div>
+					<p:commandButton value="Si" action="#{listaElementoMB.testa('Si')}" styleClass=".ui-g">
+						<f:param name="productId" value="10" />
+					</p:commandButton>
+				</div>
+
+				<div>
+					<p:commandButton value="P" action="#{listaElementoMB.testa('P')}" styleClass=".ui-g">
+						<f:param name="productId" value="10" />
+					</p:commandButton>
+				</div>
+
+				<div>
+					<p:commandButton value="S" action="#{listaElementoMB.testa('S')}" styleClass=".ui-g">
+						<f:param name="productId" value="10" />
+					</p:commandButton>
+				</div>
+
+				<div>
+					<p:commandButton value="Cl" action="#{listaElementoMB.testa('Cl')}" styleClass=".ui-g">
+						<f:param name="productId" value="10" />
+					</p:commandButton>
+				</div>
+
+				<div>
+					<p:commandButton value="Ar" action="#{listaElementoMB.testa('Ar')}" styleClass=".ui-g">
+						<f:param name="productId" value="10" />
+					</p:commandButton>
+				</div>
+			</div>
+
+
+
+
+			<div class="ui-g">
+				<div>
+					<p:commandButton value="K" action="#{listaElementoMB.testa('K')}" styleClass=".ui-g">
+						<f:param name="productId" value="10" />
+					</p:commandButton>
+				</div>
+
+				<div>
+					<p:commandButton value="Ca" action="#{listaElementoMB.testa('Ca')}" styleClass=".ui-g">
+						<f:param name="productId" value="10" />
+					</p:commandButton>
+				</div>
+
+				<div>
+					<p:commandButton value="Sc" action="#{listaElementoMB.testa('Sc')}" styleClass=".ui-g">
+						<f:param name="productId" value="10" />
+					</p:commandButton>
+				</div>
+
+				<div>
+					<p:commandButton value="Ti" action="#{listaElementoMB.testa('Ti')}" styleClass=".ui-g">
+						<f:param name="productId" value="10" />
+					</p:commandButton>
+				</div>
+
+				<div>
+					<p:commandButton value="V" action="#{listaElementoMB.testa('V')}" styleClass=".ui-g">
+						<f:param name="productId" value="10" />
+					</p:commandButton>
+				</div>
+
+				<div>
+					<p:commandButton value="Cr" action="#{listaElementoMB.testa('Cr')}" styleClass=".ui-g">
+						<f:param name="productId" value="10" />
+					</p:commandButton>
+				</div>
+
+				<div>
+					<p:commandButton value="Mn" action="#{listaElementoMB.testa('Mn')}" styleClass=".ui-g">
+						<f:param name="productId" value="10" />
+					</p:commandButton>
+				</div>
+
+				<div>
+					<p:commandButton value="Fe" action="#{listaElementoMB.testa('Fe')}" styleClass=".ui-g">
+						<f:param name="productId" value="10" />
+					</p:commandButton>
+				</div>
+
+				<div>
+					<p:commandButton value="Co" action="#{listaElementoMB.testa('Co')}" styleClass=".ui-g">
+						<f:param name="productId" value="10" />
+					</p:commandButton>
+				</div>
+
+				<div>
+					<p:commandButton value="Ni" action="#{listaElementoMB.testa('Ni')}" styleClass=".ui-g">
+						<f:param name="productId" value="10" />
+					</p:commandButton>
+				</div>
+
+				<div>
+					<p:commandButton value="Cu" action="#{listaElementoMB.testa('teste')}" styleClass=".ui-g">
+						<f:param name="productId" value="10" />
+					</p:commandButton>
+				</div>
+
+				<div>
+					<p:commandButton value="Zn" action="#{listaElementoMB.testa('Cu')}" styleClass=".ui-g">
+						<f:param name="productId" value="10" />
+					</p:commandButton>
+				</div>
+
+				<div>
+					<p:commandButton value="Ga" action="#{listaElementoMB.testa('Ga')}" styleClass=".ui-g">
+						<f:param name="productId" value="10" />
+					</p:commandButton>
+				</div>
+
+				<div>
+					<p:commandButton value="Ge" action="#{listaElementoMB.testa('Ge')}" styleClass=".ui-g">
+						<f:param name="productId" value="10" />
+					</p:commandButton>
+				</div>
+
+				<div>
+					<p:commandButton value="As" action="#{listaElementoMB.testa('As')}" styleClass=".ui-g">
+						<f:param name="productId" value="10" />
+					</p:commandButton>
+				</div>
+
+				<div>
+					<p:commandButton value="Se" action="#{listaElementoMB.testa('Se')}" styleClass=".ui-g">
+						<f:param name="productId" value="10" />
+					</p:commandButton>
+				</div>
+
+				<div>
+					<p:commandButton value="Br" action="#{listaElementoMB.testa('Br')}" styleClass=".ui-g">
+						<f:param name="productId" value="10" />
+					</p:commandButton>
+				</div>
+
+				<div>
+					<p:commandButton value="Kr" action="#{listaElementoMB.testa('Kr')}" styleClass=".ui-g">
+						<f:param name="productId" value="10" />
+					</p:commandButton>
+				</div>
+			</div>
+
+
+
+			<div class="ui-g">
+				<div>
+					<p:commandButton value="Rb" styleClass=".ui-g">
+					
+					</p:commandButton>
+				</div>
+
+				<div>
+					<p:commandButton value="Sr" action="#{listaElementoMB.testa('Sr')}" styleClass=".ui-g">
+						<f:param name="productId" value="10" />
+					</p:commandButton>
+				</div>
+
+				<div>
+					<p:commandButton value="Y" action="#{listaElementoMB.testa('Y')}" styleClass=".ui-g">
+						<f:param name="productId" value="10" />
+					</p:commandButton>
+				</div>
+
+				<div>
+					<p:commandButton value="Zr" action="#{listaElementoMB.testa('Zr')}" styleClass=".ui-g">
+						<f:param name="productId" value="10" />
+					</p:commandButton>
+				</div>
+
+				<div>
+					<p:commandButton value="Nb" action="#{listaElementoMB.testa('Nb')}" styleClass=".ui-g">
+						<f:param name="productId" value="10" />
+					</p:commandButton>
+				</div>
+
+				<div>
+					<p:commandButton value="Mo" action="#{listaElementoMB.testa('Mo')}" styleClass=".ui-g">
+						<f:param name="productId" value="10" />
+					</p:commandButton>
+				</div>
+
+				<div>
+					<p:commandButton value="Tc" action="#{listaElementoMB.testa('Tc')}" styleClass=".ui-g">
+						<f:param name="productId" value="10" />
+					</p:commandButton>
+				</div>
+
+				<div>
+					<p:commandButton value="Ru" action="#{listaElementoMB.testa('Ru')}" styleClass=".ui-g">
+						<f:param name="productId" value="10" />
+					</p:commandButton>
+				</div>
+
+				<div>
+					<p:commandButton value="Rh" action="#{listaElementoMB.testa('Rh')}" styleClass=".ui-g">
+						<f:param name="productId" value="10" />
+					</p:commandButton>
+				</div>
+
+				<div>
+					<p:commandButton value="Pd" action="#{listaElementoMB.testa('Pd')}" styleClass=".ui-g">
+						<f:param name="productId" value="10" />
+					</p:commandButton>
+				</div>
+
+				<div>
+					<p:commandButton value="Ag" action="#{listaElementoMB.testa('Ag')}" styleClass=".ui-g">
+						<f:param name="productId" value="10" />
+					</p:commandButton>
+				</div>
+
+				<div>
+					<p:commandButton value="Cd" action="#{listaElementoMB.testa('Cd')}" styleClass=".ui-g">
+						<f:param name="productId" value="10" />
+					</p:commandButton>
+				</div>
+
+				<div>
+					<p:commandButton value="In" action="#{listaElementoMB.testa('In')}" styleClass=".ui-g">
+						<f:param name="productId" value="10" />
+					</p:commandButton>
+				</div>
+
+				<div>
+					<p:commandButton value="Sn" action="#{listaElementoMB.testa('Sn')}" styleClass=".ui-g">
+						<f:param name="productId" value="10" />
+					</p:commandButton>
+				</div>
+
+				<div>
+					<p:commandButton value="Sb" action="#{listaElementoMB.testa('Sb')}" styleClass=".ui-g">
+						<f:param name="productId" value="10" />
+					</p:commandButton>
+				</div>
+
+				<div>
+					<p:commandButton value="Te" action="#{listaElementoMB.testa('Te')}" styleClass=".ui-g">
+						<f:param name="productId" value="10" />
+					</p:commandButton>
+				</div>
+
+				<div>
+					<p:commandButton value="I" action="#{listaElementoMB.testa('I')}" styleClass=".ui-g">
+						<f:param name="productId" value="10" />
+					</p:commandButton>
+				</div>
+
+				<div>
+					<p:commandButton value="Xe" action="#{listaElementoMB.testa('Xe')}" styleClass=".ui-g">
+						<f:param name="productId" value="10" />
+					</p:commandButton>
+				</div>
+			</div>
+
+
+
+
+
+			<div class="ui-g">
+				<div>
+					<p:commandButton value="Cs" action="#{listaElementoMB.testa('Cs')}" styleClass=".ui-g">
+						<f:param name="productId" value="10" />
+					</p:commandButton>
+				</div>
+
+				<div>
+					<p:commandButton value="Ba" action="#{listaElementoMB.testa('Ba')}" styleClass=".ui-g">
+						<f:param name="productId" value="10" />
+					</p:commandButton>
+				</div>
+
+				<div>
+					<p:commandButton value="57-71" styleClass=".ui-g">
+						<f:param name="productId" value="10" />
+					</p:commandButton>
+				</div>
+
+				<div>
+					<p:commandButton value="Hf" action="#{listaElementoMB.testa('Hf')}" styleClass=".ui-g">
+						<f:param name="productId" value="10" />
+					</p:commandButton>
+				</div>
+
+				<div>
+					<p:commandButton value="Ta" action="#{listaElementoMB.testa('Ta')}" styleClass=".ui-g">
+						<f:param name="productId" value="10" />
+					</p:commandButton>
+				</div>
+
+				<div>
+					<p:commandButton value="W" action="#{listaElementoMB.testa('W')}" styleClass=".ui-g">
+						<f:param name="productId" value="10" />
+					</p:commandButton>
+				</div>
+
+				<div>
+					<p:commandButton value="Re" action="#{listaElementoMB.testa('Re')}" styleClass=".ui-g">
+						<f:param name="productId" value="10" />
+					</p:commandButton>
+				</div>
+
+				<div>
+					<p:commandButton value="Os" action="#{listaElementoMB.testa('Os')}" styleClass=".ui-g">
+						<f:param name="productId" value="10" />
+					</p:commandButton>
+				</div>
+
+				<div>
+					<p:commandButton value="Ir" action="#{listaElementoMB.testa('Ir')}" styleClass=".ui-g">
+						<f:param name="productId" value="10" />
+					</p:commandButton>
+				</div>
+
+				<div>
+					<p:commandButton value="Pt" action="#{listaElementoMB.testa('Pt')}" styleClass=".ui-g">
+						<f:param name="productId" value="10" />
+					</p:commandButton>
+				</div>
+
+				<div>
+					<p:commandButton value="Au" action="#{listaElementoMB.testa('Au')}" styleClass=".ui-g">
+						<f:param name="productId" value="10" />
+					</p:commandButton>
+				</div>
+
+				<div>
+					<p:commandButton value="Hg" action="#{listaElementoMB.testa('Hg')}" styleClass=".ui-g">
+						<f:param name="productId" value="10" />
+					</p:commandButton>
+				</div>
+
+				<div>
+					<p:commandButton value="Tl" action="#{listaElementoMB.testa('Tl')}" styleClass=".ui-g">
+						<f:param name="productId" value="10" />
+					</p:commandButton>
+				</div>
+
+				<div>
+					<p:commandButton value="Pb" action="#{listaElementoMB.testa('Pb')}" styleClass=".ui-g">
+						<f:param name="productId" value="10" />
+					</p:commandButton>
+				</div>
+
+				<div>
+					<p:commandButton value="Bi" action="#{listaElementoMB.testa('Bi')}" styleClass=".ui-g">
+						<f:param name="productId" value="10" />
+					</p:commandButton>
+				</div>
+
+				<div>
+					<p:commandButton value="Po" action="#{listaElementoMB.testa('Po')}" styleClass=".ui-g">
+						<f:param name="productId" value="10" />
+					</p:commandButton>
+				</div>
+
+				<div>
+					<p:commandButton value="At" action="#{listaElementoMB.testa('At')}" styleClass=".ui-g">
+						<f:param name="productId" value="10" />
+					</p:commandButton>
+				</div>
+
+				<div>
+					<p:commandButton value="Rn" action="#{listaElementoMB.testa('Rn')}" styleClass=".ui-g">
+						<f:param name="productId" value="10" />
+					</p:commandButton>
+				</div>
+			</div>
+
+
+
+
+
+
+			<div class="ui-g">
+				<div>
+					<p:commandButton value="Fr" action="#{listaElementoMB.testa('Fr')}" styleClass=".ui-g">
+						<f:param name="productId" value="10" />
+					</p:commandButton>
+				</div>
+
+				<div>
+					<p:commandButton value="Ra" action="#{listaElementoMB.testa('Ra')}" styleClass=".ui-g">
+						<f:param name="productId" value="10" />
+					</p:commandButton>
+				</div>
+
+				<div>
+					<p:commandButton value="89-103" styleClass=".ui-g">
+						<f:param name="productId" value="10" />
+					</p:commandButton>
+				</div>
+
+				<div>
+					<p:commandButton value="Rf" action="#{listaElementoMB.testa('Rf')}" styleClass=".ui-g">
+						<f:param name="productId" value="10" />
+					</p:commandButton>
+				</div>
+
+				<div>
+					<p:commandButton value="Db" action="#{listaElementoMB.testa('Db')}" styleClass=".ui-g">
+						<f:param name="productId" value="10" />
+					</p:commandButton>
+				</div>
+
+				<div>
+					<p:commandButton value="Sg" action="#{listaElementoMB.testa('Sg')}" styleClass=".ui-g">
+						<f:param name="productId" value="10" />
+					</p:commandButton>
+				</div>
+
+				<div>
+					<p:commandButton value="Bh" action="#{listaElementoMB.testa('Bh')}" styleClass=".ui-g">
+						<f:param name="productId" value="10" />
+					</p:commandButton>
+				</div>
+
+				<div>
+					<p:commandButton value="Hs" action="#{listaElementoMB.testa('Hs')}" styleClass=".ui-g">
+						<f:param name="productId" value="10" />
+					</p:commandButton>
+				</div>
+
+				<div>
+					<p:commandButton value="Mt" action="#{listaElementoMB.testa('Mt')}" styleClass=".ui-g">
+						<f:param name="productId" value="10" />
+					</p:commandButton>
+				</div>
+
+				<div>
+					<p:commandButton value="Ds" action="#{listaElementoMB.testa('Ds')}" styleClass=".ui-g">
+						<f:param name="productId" value="10" />
+					</p:commandButton>
+				</div>
+
+				<div>
+					<p:commandButton value="Rg" action="#{listaElementoMB.testa('Rg')}" styleClass=".ui-g">
+						<f:param name="productId" value="10" />
+					</p:commandButton>
+				</div>
+
+				<div>
+					<p:commandButton value="Cn" action="#{listaElementoMB.testa('Cn')}" styleClass=".ui-g">
+						<f:param name="productId" value="10" />
+					</p:commandButton>
+				</div>
+
+				<div>
+					<p:commandButton value="Nh" action="#{listaElementoMB.testa('Nh')}" styleClass=".ui-g">
+						<f:param name="productId" value="10" />
+					</p:commandButton>
+				</div>
+
+				<div>
+					<p:commandButton value="Fl" action="#{listaElementoMB.testa('Fl')}" styleClass=".ui-g">
+						<f:param name="productId" value="10" />
+					</p:commandButton>
+				</div>
+
+				<div>
+					<p:commandButton value="Mc" action="#{listaElementoMB.testa('Mc')}" styleClass=".ui-g">
+						<f:param name="productId" value="10" />
+					</p:commandButton>
+				</div>
+
+				<div>
+					<p:commandButton value="Lv" action="#{listaElementoMB.testa('Lv')}" styleClass=".ui-g">
+						<f:param name="productId" value="10" />
+					</p:commandButton>
+				</div>
+
+				<div>
+					<p:commandButton value="Ts" action="#{listaElementoMB.testa('Ts')}" styleClass=".ui-g">
+						<f:param name="productId" value="10" />
+					</p:commandButton>
+				</div>
+
+				<div>
+					<p:commandButton value="Og" action="#{listaElementoMB.testa('Og')}" styleClass=".ui-g">
+						<f:param name="productId" value="10" />
+					</p:commandButton>
+				</div>
+			</div>
+
+
+
+
+			<br />
+			<br />
+
+
+
+			<div>
+
+				<div>
+					<p:commandButton value="Kr" action="#{listaElementoMB.testa('Kr')}" styleClass=".ui-g">
+						<f:param name="productId" value="10" />
+					</p:commandButton>
+				</div>
+
+				<div>
+
+					<div class="ui-g">
+						<div>
+							<p:commandButton value="La" action="#{listaElementoMB.testa('La')}" styleClass=".ui-g">
+								<f:param name="productId" value="10" />
+							</p:commandButton>
+						</div>
+
+						<div>
+							<p:commandButton value="Ce" action="#{listaElementoMB.testa('Ce')}" styleClass=".ui-g">
+								<f:param name="productId" value="10" />
+							</p:commandButton>
+						</div>
+
+						<div>
+							<p:commandButton value="Pr" action="#{listaElementoMB.testa('Pr')}" styleClass=".ui-g">
+								<f:param name="productId" value="10" />
+							</p:commandButton>
+						</div>
+
+						<div>
+							<p:commandButton value="Nd" action="#{listaElementoMB.testa('Nd')}" styleClass=".ui-g">
+								<f:param name="productId" value="10" />
+							</p:commandButton>
+						</div>
+
+						<div>
+							<p:commandButton value="Pm" action="#{listaElementoMB.testa('Pm')}" styleClass=".ui-g">
+								<f:param name="productId" value="10" />
+							</p:commandButton>
+						</div>
+
+						<div>
+							<p:commandButton value="Sm" action="#{listaElementoMB.testa('Sm')}" styleClass=".ui-g">
+								<f:param name="productId" value="10" />
+							</p:commandButton>
+						</div>
+
+						<div>
+							<p:commandButton value="Eu" action="#{listaElementoMB.testa('Eu')}" styleClass=".ui-g">
+								<f:param name="productId" value="10" />
+							</p:commandButton>
+						</div>
+
+						<div>
+							<p:commandButton value="Gd" action="#{listaElementoMB.testa('Gd')}" styleClass=".ui-g">
+								<f:param name="productId" value="10" />
+							</p:commandButton>
+						</div>
+
+						<div>
+							<p:commandButton value="Tb" action="#{listaElementoMB.testa('Tb')}" styleClass=".ui-g">
+								<f:param name="productId" value="10" />
+							</p:commandButton>
+						</div>
+
+						<div>
+							<p:commandButton value="Dy" action="#{listaElementoMB.testa('Dy')}" styleClass=".ui-g">
+								<f:param name="productId" value="10" />
+							</p:commandButton>
+						</div>
+
+						<div>
+							<p:commandButton value="Ho" action="#{listaElementoMB.testa('teste')}" styleClass=".ui-g">
+								<f:param name="productId" value="10" />
+							</p:commandButton>
+						</div>
+
+						<div>
+							<p:commandButton value="Er" action="#{listaElementoMB.testa('Er')}" styleClass=".ui-g">
+								<f:param name="productId" value="10" />
+							</p:commandButton>
+						</div>
+
+						<div>
+							<p:commandButton value="Tm" action="#{listaElementoMB.testa('Tm')}" styleClass=".ui-g">
+								<f:param name="productId" value="10" />
+							</p:commandButton>
+						</div>
+
+						<div>
+							<p:commandButton value="Yb" action="#{listaElementoMB.testa('Yb')}" styleClass=".ui-g">
+								<f:param name="productId" value="10" />
+							</p:commandButton>
+						</div>
+
+						<div>
+							<p:commandButton value="Lu" action="#{listaElementoMB.testa('Lu')}" styleClass=".ui-g">
+								<f:param name="productId" value="10" />
+							</p:commandButton>
+						</div>
+					</div>
+
+
+
+
+
+					<div class="ui-g">
+						<div>
+							<p:commandButton value="Ac" action="#{listaElementoMB.testa('Ac')}" styleClass=".ui-g">
+								<f:param name="productId" value="10" />
+							</p:commandButton>
+						</div>
+
+						<div>
+							<p:commandButton value="Th" action="#{listaElementoMB.testa('Th')}" styleClass=".ui-g">
+								<f:param name="productId" value="10" />
+							</p:commandButton>
+						</div>
+
+						<div>
+							<p:commandButton value="Pa" action="#{listaElementoMB.testa('Pa')}" styleClass=".ui-g">
+								<f:param name="productId" value="10" />
+							</p:commandButton>
+						</div>
+
+						<div>
+							<p:commandButton value="U" action="#{listaElementoMB.testa('U')}" styleClass=".ui-g">
+								<f:param name="productId" value="10" />
+							</p:commandButton>
+						</div>
+
+
+						<div>
+							<p:commandButton value="Np" action="#{listaElementoMB.testa('Np')}" styleClass=".ui-g">
+								<f:param name="productId" value="10" />
+							</p:commandButton>
+						</div>
+
+						<div>
+							<p:commandButton value="Pu" action="#{listaElementoMB.testa('Pu')}" styleClass=".ui-g">
+								<f:param name="productId" value="10" />
+							</p:commandButton>
+						</div>
+
+						<div>
+							<p:commandButton value="Am" action="#{listaElementoMB.testa('Am')}" styleClass=".ui-g">
+								<f:param name="productId" value="10" />
+							</p:commandButton>
+						</div>
+
+						<div>
+							<p:commandButton value="Cm" action="#{listaElementoMB.testa('Cm')}" styleClass=".ui-g">
+								<f:param name="productId" value="10" />
+							</p:commandButton>
+						</div>
+
+						<div>
+							<p:commandButton value="Bk" action="#{listaElementoMB.testa('Bk')}" styleClass=".ui-g">
+								<f:param name="productId" value="10" />
+							</p:commandButton>
+						</div>
+
+						<div>
+							<p:commandButton value="Cf" action="#{listaElementoMB.testa('Cf')}" styleClass=".ui-g">
+								<f:param name="productId" value="10" />
+							</p:commandButton>
+						</div>
+
+						<div>
+							<p:commandButton value="Es" action="#{listaElementoMB.testa('Es')}" styleClass=".ui-g">
+								<f:param name="productId" value="10" />
+							</p:commandButton>
+						</div>
+
+						<div>
+							<p:commandButton value="Fm" action="#{listaElementoMB.testa('Fm')}" styleClass=".ui-g">
+								<f:param name="productId" value="10" />
+							</p:commandButton>
+						</div>
+
+						<div>
+							<p:commandButton value="Md" action="#{listaElementoMB.testa('Md')}" styleClass=".ui-g">
+								<f:param name="productId" value="10" />
+							</p:commandButton>
+						</div>
+
+						<div>
+							<p:commandButton value="No" action="#{listaElementoMB.testa('No')}"  styleClass=".ui-g">
+								<f:param name="productId" value="10" />
+							</p:commandButton>
+						</div>
+
+						<div>
+							<p:commandButton value="Lr" action="#{listaElementoMB.testa('Lr')}" style="width:60px; height:60px; align:center; background-color:coral" >
+							
+							</p:commandButton>
+						</div>
+					</div>
+				</div>
+
+
+
+			</div>
+
+
+
+
+		</h:form>
+
+
+	</ui:define>
+
+</ui:composition>

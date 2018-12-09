@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:f="http://java.sun.com/jsf/core" xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:p="http://primefaces.org/ui" xmlns:adm="http://github.com/adminfaces"
+                template="/WEB-INF/templates/template.xhtml">
+
+    <ui:define name="title">
+        Cadastro Elemento
+    </ui:define>
+
+    <ui:define name="body">
+        <f:metadata>
+        	<f:viewParam name="id" value="#{cadastroElementoMB.idElemento}" converter="javax.faces.Long"/>
+        	<f:viewParam name="id" value="#{cadastroElementoMB.idDescoberta}" converter="javax.faces.Long"/>
+        	<f:viewParam name="id" value="#{cadastroElementoMB.idPropriedadesAtomicas}" converter="javax.faces.Long"/>
+        	<f:viewParam name="id" value="#{cadastroElementoMB.idPropriedadesEletromagneticas}" converter="javax.faces.Long"/>
+        	<f:viewParam name="id" value="#{cadastroElementoMB.idPropriedadesFisicas}" converter="javax.faces.Long"/>
+        	<f:viewParam name="id" value="#{cadastroElementoMB.idPropriedadesDiversas}" converter="javax.faces.Long"/>
+        	<f:viewParam name="id" value="#{cadastroElementoMB.idCelulaCristalina}" converter="javax.faces.Long"/>
+        	<f:event listener="#{cadastroElementoMB.inicializar()}" type="preRenderView"></f:event>
+        </f:metadata>
+
+        <adm:breadcrumb title="Cadastro Tarefa #{cadastroElementoMB.elemento.id}" link="cadastro-elementos.xhtml?id=#{cadastroElementoMB.elemento.id}"/>
+        <h:form id="form" prependId="false">
+            <p:focus/>
+
+			
+            <div class="box box-primary">
+                <div class="box-header with-border">
+                    <div id="main-buttons" class="hidden-sm hidden-xs">
+                        <p:commandButton value="Salvar" update="@form"
+                        				 action="#{cadastroElementoMB.salvar()}"
+                                         icon="fa fa-check" styleClass="btn-primary"/>
+                        <p:spacer width="5"/>
+
+                        <p:commandButton value="Excluir" process="@this"
+                        				 action="#{cadastroElementoMB.excluir()}"
+                                         icon="fa fa-trash"
+                                         styleClass="btn-danger">
+                        </p:commandButton>
+                        <p:spacer width="5"/>
+                        <p:commandButton value="Voltar" immediate="true"
+                                         action="lista-elementos?faces-redirect=true"
+                                         process="@this"
+                                         icon="fa fa-close"/>
+                                         
+                    </div>
+                    
+                    <p:splitButton value="Salvar" update="@form"
+                                   icon="fa fa-check"
+                                   action="#{cadastroElementoMB.salvar()}"
+                                   styleClass="hidden-md hidden-lg btn-primary">
+                        <p:menuitem value="Excluir"
+                        			action="#{cadastroElementoMB.excluir()}"
+                                    process="@this"
+                                    icon="fa fa-trash"/>
+                        <p:separator/>
+                        <p:menuitem value="Voltar" action="lista-elementos?faces-redirect=true" process="@this"
+                                    icon="fa fa-close"/>
+                    </p:splitButton>
+
+                    
+
+                    <p:separator/>
+
+                    <div class="ui-fluid">
+                    	<p:panelGrid id="capaPanel" columns="4" layout="grid">
+                    	
+                    		<p:outputLabel value="Simbolo" for="simbolo"/>
+                    		<p:inputText maxlength="2" placeholder="1º letra maiuscula" id="simbolo" value="#{cadastroElementoMB.elemento.simbolo}"/>
+
+                    		<p:outputLabel value="Nome" for="nomeElemento"/>
+                    		<p:inputText id="nomeElemento" value="#{cadastroElementoMB.elemento.nome}"/>
+
+                    		<p:outputLabel value="Nome Latim" for="nomeElementoLatim"/>
+                    		<p:inputText id="nomeElementoLatim" value="#{cadastroElementoMB.elemento.nomeLatim}"/>
+                    		
+                     		<p:outputLabel value="Origem do Nome" for="nomeOrigem"/>
+                    		<p:inputText id="nomeOrigem" value="#{cadastroElementoMB.elemento.origemNome}"/>                   		                    		
+                    		
+                     		<p:outputLabel value="CAS" for="cas"/>
+                    		<p:inputText id="cas" value="#{cadastroElementoMB.elemento.cas}"/>
+                    		
+                     		<p:outputLabel value="Camadas Eletrônicas" for="camadas"/>
+                    		<p:inputText id="camadas" value="#{cadastroElementoMB.elemento.camadasEletronicas}"/> 
+
+                     		<p:outputLabel value="Descobridor" for="descobridor"/>
+                    		<p:inputText id="descobridor" value="#{cadastroElementoMB.descoberta.descobridor}"/>                    		
+
+
+                    	</p:panelGrid>
+
+                     		<p:outputLabel value="Descrição descoberta" for="descricao"/>
+                    		<p:inputTextarea id="descricao" value="#{cadastroElementoMB.descoberta.descricao}"/>                    		
+                    		
+
+                    		<p:outputLabel value="Materias para ler" for="links"/>
+                    		<p:inputTextarea id="links" value="#{cadastroElementoMB.elemento.links}"/>
+                    		
+                    		
+                    		<p:outputLabel value="Propriedades Atômicas" for="propAtoDesc"/>
+                    		<p:inputText id="propAtoDesc" value="#{cadastroElementoMB.propriedadesAtomicas.descricao}"/>
+                    		
+                     		<p:outputLabel value="Propriedades Fisicas" for="fisica"/>
+                    		<p:inputText id="fisica" value="#{cadastroElementoMB.propriedadesFisicas.quadra}"/>                   		                    		
+                    		
+                     		<p:outputLabel value="Diversas" for="diversas"/>
+                    		<p:inputText id="diversas" value="#{cadastroElementoMB.propriedadesDiversas.numeroAtomico}"/>
+                    		
+                     		<p:outputLabel value="Eletrônicas" for="eletro"/>
+                    		<p:inputText id="eletro" value="#{cadastroElementoMB.propriedadesEletromagneticas.tipoEletrico}"/> 
+                    		
+                    		
+              
+
+
+
+                    
+                    </div>
+                </div>
+            </div>
+        </h:form>
+
+    </ui:define>
+
+</ui:composition>
